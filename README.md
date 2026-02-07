@@ -1,27 +1,88 @@
-# AkhileshjhaIn
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+# Akhilesh Kumar Jha – Portfolio
 
-## Development server
+A modern, single-page portfolio built with Angular, featuring parallax effects, modular components, and content sourced from Akhilesh Kumar Jha's resume.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Component-based Angular SPA**: Each section (navbar, hero, about, skills, projects, experience, writing, contact, footer) is a dedicated Angular component for easy maintenance and scalability.
+- **Modern UI/UX**: Clean, responsive design with parallax/depth effects and smooth scrolling.
+- **Resume Download**: Downloadable PDF resume from the hero section.
+- **Branding**: Custom logo (AKJ) and full name in the navbar.
+- **Content-rich**: All content is based on the provided resume, including projects, experience, and writing.
+- **Easy Customization**: Update content by editing the relevant Angular components.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16+ recommended)
+- [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installation
+1. **Clone the repository:**
+	```sh
+	git clone <your-repo-url>
+	cd akhileshjha.in
+	```
+2. **Install dependencies:**
+	```sh
+	npm install
+	```
 
-## Running unit tests
+### Running Locally
+Start the development server:
+```sh
+npm start
+```
+Visit [http://localhost:4200](http://localhost:4200) in your browser.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Building for Production
+```sh
+ng build --configuration production
+```
+Output will be in the `dist/` directory.
 
-## Running end-to-end tests
+## Project Structure
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+akhileshjha.in/
+├── angular.json
+├── package.json
+├── README.md
+├── tsconfig*.json
+├── src/
+│   ├── index.html
+│   ├── main.ts
+│   ├── styles.css
+│   └── app/
+│       ├── app.component.*
+│       ├── app.module.ts
+│       └── components/
+│           ├── site-nav/
+│           ├── hero-section/
+│           ├── about-section/
+│           ├── skills-section/
+│           ├── projects-section/
+│           ├── experience-section/
+│           ├── writing-section/
+│           ├── contact-section/
+│           └── site-footer/
+│       └── assets/
+│           └── data/Akhilesh_Kumar_Jha.pdf
+```
 
-## Further help
+## Customization
+- **Content**: Edit the relevant component files in `src/app/components/`.
+- **Resume**: Replace `src/assets/data/Akhilesh_Kumar_Jha.pdf` with your own PDF.
+- **Branding/Logo**: Update the `site-nav` component for logo or name changes.
+- **Parallax/Styling**: Adjust CSS in `app.component.css` or component styles.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Deployment
+You can deploy the built `dist/` folder to any static hosting service (Vercel, Netlify, GitHub Pages, etc.).
+
+## License
+This project is for personal portfolio use. Feel free to fork and adapt for your own portfolio.
+
+---
+
+**Made with Angular & ❤️ by Akhilesh Kumar Jha**
