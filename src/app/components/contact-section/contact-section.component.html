@@ -1,0 +1,21 @@
+<section class="section contact" id="contact">
+  <div class="section-head">
+    <h2>Contact</h2>
+    <p>If you are hiring or building a product that needs clean, scalable UI, let's connect.</p>
+  </div>
+  <div class="contact-card depth-wrap">
+    <div>
+      <p class="contact-label">Email</p>
+      <a class="contact-link" [href]="'mailto:' + email">{{ email }}</a>
+    </div>
+    <div>
+      <p class="contact-label">Phone</p>
+      <a class="contact-link" [href]="'tel:' + phone.replace(' ', '')">{{ phone }}</a>
+    </div>
+    <div>
+      <p class="contact-label">Role</p>
+      <span class="contact-link">Senior Frontend Developer</span>
+    </div>
+    <a class="button primary" [href]="'mailto:' + email">Start a conversation</a>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<section class="section projects" id="projects">
+  <div class="section-head">
+    <h2>Projects</h2>
+    <p>Selected work focused on enterprise-grade UI, speed, and configurability.</p>
+  </div>
+  <div class="card-grid projects-grid">
+    <article class="project-card" *ngFor="let project of projects" [class.highlighted]="project.highlighted">
+      <div class="project-top">
+        <h3>{{ project.title }}</h3>
+        <span class="project-tag">{{ project.tag }}</span>
+      </div>
+      <p>{{ project.description }}</p>
+      <ul class="project-list">
+        <li *ngFor="let bullet of project.bullets">{{ bullet }}</li>
+      </ul>
+    </article>
+  </div>
+</section>

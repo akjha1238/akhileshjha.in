@@ -1,0 +1,15 @@
+<section class="section experience" id="experience">
+  <div class="section-head">
+    <h2>Experience</h2>
+    <p>Working across enterprise deployments and evolving UI architecture with scale in mind.</p>
+  </div>
+  <div class="timeline">
+    <article class="timeline-item" *ngFor="let role of roles">
+      <div class="timeline-role">
+        <h3>{{ role.title }}</h3>
+        <span>{{ role.company }} - {{ role.period }}</span>
+      </div>
+      <p>{{ role.summary }}</p>
+    </article>
+  </div>
+</section>

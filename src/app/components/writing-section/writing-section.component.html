@@ -1,0 +1,15 @@
+<section class="section writing" id="writing">
+  <div class="section-head">
+    <h2>Content Writing</h2>
+    <p>
+      I care about clarity in interfaces and documentation. I write microcopy, release notes, and
+      onboarding guides that help teams ship faster and users feel confident.
+    </p>
+  </div>
+  <div class="writing-grid">
+    <article class="writing-card" *ngFor="let card of cards">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.description }}</p>
+    </article>
+  </div>
+</section>

@@ -1,0 +1,51 @@
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Frontend Developer - 4+ years - Angular and React</p>
+      <h1>Building fast, scalable web products that feel effortless to use.</h1>
+      <p class="lead">
+        I design frontend systems, reusable UI, and performance-first experiences for large-scale
+        products. I thrive in complex enterprise setups and make them feel clean, modern, and human.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">View projects</a>
+        <a class="button ghost" href="#contact">Start a project</a>
+        <a class="button ghost" [href]="resumeUrl" download>Download resume</a>
+      </div>
+      <div class="hero-meta depth-wrap">
+        <div class="meta-card depth-card" *ngFor="let meta of metaCards">
+          <span class="meta-label">{{ meta.label }}</span>
+          <span class="meta-value">{{ meta.value }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual depth-wrap">
+      <article class="hero-card depth-card">
+        <div class="hero-card-top">
+          <span class="pill">Currently</span>
+          <span class="pill muted">Comviva - Senior Frontend Developer</span>
+        </div>
+        <div class="hero-highlights">
+          <p *ngFor="let item of highlights">{{ item }}</p>
+        </div>
+        <div class="hero-card-footer">
+          <span>System design mindset - Frontend architecture</span>
+        </div>
+      </article>
+
+      <div class="floating-card card-a parallax-layer" style="--depth: -0.18;">
+        <p class="floating-title">Server-Driven UI</p>
+        <p class="floating-sub">JSON-based rendering and reusable blocks.</p>
+      </div>
+      <div class="floating-card card-b parallax-layer" style="--depth: -0.1;">
+        <p class="floating-title">Design System</p>
+        <p class="floating-sub">Tokens, components, and stories at scale.</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <span class="scroll-dot"></span>
+  </div>
+</section>
